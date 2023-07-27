@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class=" overflow-hidden">
+        <div class="min-vh-100 d-flex flex-column">
+            <nav class="light-green w-100 z-index-2-lg position-fixed-lg">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div>
+                        <label for="menu_box" class="checkbtn d-flex  z-index-2 rotate-90">
+                            <span class="mr_3"></span>
+                            <span class="mr_3"></span>
+                            <span class="mr_3"></span>
+                        </label>
+                        <input type="checkbox" id="menu_box" hidden>
+                        <ul class="d-flex align-items-center ff-poppins gap-45 small_screen pt-27 pb-26">
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">Home</a></li>
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">Overview</a></li>
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">Why Choose
+                                    Us?</a></li>
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">Our Plans</a>
+                            </li>
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">How It Works</a>
+                            </li>
+                            <li><a href="" class="fw-400 text-purple fs-18 nav-link position-relative">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="bg-image  d-flex flex-grow-1">
+                <div class="container d-flex align-items-center">
+                    <div>
+                        <p class="fs-18 ff-poppins fw-400">Splash Your Dream Color</p>
+                        <h1 class="fs-36 fw-500 ff-poppins pt-3 pb-24">Bring Your Home To Lively Colors</h1>
+
+                        <button class="border-gradient border-gradient-purple">
+                            Colour Me
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- <choose-us-section> -->
+        <section class="min-vh-100 position-relative">
+            <img src="./assets/images/clip-art-orange.png" alt="clip-art-orange"
+                class="position-absolute right-0 d-none d-xxl-block">
+            <img src="./assets/images/red-paint-splash.png" alt="red-paint-splash"
+                class="position-absolute bottom-0 d-none d-lg-block">
+            <div class="container  pt-115">
+                <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center">Why Choose Us?</h2>
+                <div class="d-flex align-items-center justify-content-center gap-1 pt-3">
+                    <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+                    <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+                    <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+                </div>
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-12 col-md-6  border-right-lg border_right_md">
+                        <div class="d-flex flex-column align-items-center pt-5 pb-5">
+                            <img src="./assets/images/faux-1.png" alt="faux-1" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Faux Finishes</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-md-6  border-right-lg border-right-md">
+                        <div class="d-flex flex-column align-items-center pt-5 pb-5">
+                            <img src="./assets/images/water-proofing.png" alt="water-proofing" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Water Proofing</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-md-6 border_right_md border_right_lg p-md-0">
+                        <div class="d-flex flex-column align-items-center pt-5 pb-5 border_top_md border_top_lg">
+                            <img src="./assets/images/pre-paint.png" alt="pre-paint" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Pre-Paint Demo</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-md-6  border-right-lg border-right-md p-0">
+                        <div class="d-flex flex-column align-items-center border-lg-top border_top_md pt-5 pb-5">
+                            <img src="./assets/images/removeal.png" alt="removeal" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Mildew Removal</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-md-6  border-right-lg p-0 border_right_md">
+                        <div class="d-flex flex-column align-items-center border-lg-top border_top_md pt-5 pb-5">
+                            <img src="./assets/images/color-proof.png" alt="color-proof" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Color Proof</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12 col-md-6  p-0">
+                        <div class="d-flex flex-column align-items-center pt-5 pb-5 border-lg-top border_top_md">
+                            <img src="./assets/images/window-washing.png" alt="window-washing" class="icon-hover">
+                            <p class="fs-24 fw-500 ff-poppins pt-24">Window Washing</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- </choose-us-section> -->
+        <!-- <display-grid-section> -->
+        <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center">Gallery</h2>
+        <div class="d-flex align-items-center justify-content-center gap-1 pt-3 pb-5">
+            <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+            <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+            <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+        </div>
+        <div class="grid-box">
+            <div class="grid-items">
+                <img src="./assets/images/grid-item1.png" alt="grid-item1" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item2.png" alt="grid-item2" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item3.png" alt="grid-item3" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item4.png" alt="grid-item4" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item5.png" alt="grid-item5" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item6.png" alt="grid-item6" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-items">
+                <img src="./assets/images/grid-item7.png" alt="grid-item7" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+            <div class="grid-item8 grid-items">
+                <img src="./assets/images/grid-item8.png" alt="grid-item8" class="w-100 h-100">
+                <div class="grid-shadow">
+                    <img src="./assets/images/grid-shadow.png" alt="grid-shadow" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+        <!-- </display-grid-section> -->
+        <!-- <about-us-section> -->
+        <section class="d-flex flex-grow-1 position-relative">
+            <img src="./assets/images/colorful-paint-splashes.png" alt="colorful-paint-splashes"
+                class="position-absolute right-0 bottom-0 d-none d-xxl-block">
+            <img src="./assets/images/istockphoto.png" alt="istockphoto" class="position-absolute d-none d-xxl-block">
+            <div class="container pt-115 pb-115">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <div>
+                            <h2 class="fs-48 fw-700 ff-poppins pb-3">Welcome</h2>
+                            <p class="fs-18 fw-400 ff-poppins pb-24">Lorem Ipsum is simply dummy text of the printing
+                                and
+                                typesetting industry. Lorem Ipsum has
+                                been the industry's standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                                scrambled
+                                it to make a type specimen
+                                book.</p>
+                        </div>
+                        <div class="row">
+                            <div class=" col-6 d-flex align-items-center pb-4">
+                                <img src="./assets/images/certified-member.png" alt="certified-member" class="mr-12">
+                                <p class="mb-0 ff-poppins fs-18 fw-400">PDCA Certified Member</p>
+                            </div>
+                            <div class=" col-6 d-flex align-items-center pb-4">
+                                <img src="./assets/images/color-consultation.png" alt="color-consultation"
+                                    class="mr-12">
+                                <p class="mb-0 ff-poppins fs-18 fw-400">Free Color Consultation</p>
+                            </div>
+                            <div class=" col-6 d-flex align-items-center">
+                                <img src="./assets/images/flexible-scheduling.png" alt="flexible-scheduling"
+                                    class="mr-12">
+                                <p class="mb-0 ff-poppins fs-18 fw-400">Flexible Scheduling Options</p>
+                            </div>
+                            <div class=" col-6 d-flex align-items-center">
+                                <img src="./assets/images/clean-work-area.png" alt="clean-work-area" class="mr-12">
+                                <p class="mb-0 ff-poppins fs-18 fw-400">Maintain a Clean Work Area</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div>
+                            <img src="./assets/images/about-us-img.png" alt="about-us-img"
+                                class="w-100 border-radius23 pt-5 pt-sm-5 pt-md-5 pt-lg-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- <procss-section> -->
+        <section class="min-vh-100 position-relative">
+            <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center">Our Process</h2>
+            <div class="d-flex align-items-center justify-content-center gap-1 pt-3 pb-5">
+                <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+                <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+                <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="my-container position-relative">
+                    <img src="./assets/images/www.png" alt="www" class="fire-wave w-100 d-none d-xl-block">
+                    <div class="row justify-content-center position-relative z-1 ">
+                        <div class="col-12 order-0 mb-3 pb-4 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box  d-flex align-items-center flex-lg-column-reverse">
+                                <div class="imgbox ">
+                                    <img src="./assets/images/Mask-Group.png" alt="Mask-Group" class="w-100 mw-215" />
+                                </div>
+                                <p class="text-center mw-215 fs-24 fw-700 ff-poppins">1. Request a free estimate</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-2 mb-3 pb-4 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box d-flex align-items-center flex-lg-column-reverse">
+                                <div class="imgbox">
+                                    <img src="./assets/images/prep-work.png" alt="prep-work" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-232 fs-24 ff-poppins fw-700">3. Extensive Prep Work</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-4 mb-3 pb-4 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box d-flex align-items-center flex-lg-column-reverse">
+                                <div class="imgbox">
+                                    <img src="./assets/images/wash-and-clean.png" alt="wash-and-clean" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-201 fs-24 ff-poppins fw-700">5. Wash Up & Clean Up</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-6 mb-3 pb-4 col-sm-6 col-md-4 col-lg-3">
+                            <div class="box d-flex align-items-center flex-lg-column-reverse">
+                                <div class="imgbox">
+                                    <img src="./assets/images/painted-space.png" alt="painted-space" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-314 fs-24 ff-poppins fw-700">7. Pay & Enjoy Newly Painted Space!</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 col-sm-6 pt-4 col-md-4 col-lg-3">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <img src="./assets/images/Mask-Group2.png" alt="Mask-Group2" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-253 ff-poppins fs-24 fw-700">2. Schedule Your Service</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-3 col-sm-6 pt-4 col-md-4 col-lg-3">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <img src="./assets/images/magic-begins.png" alt="magic-begins" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-253 fs-24 ff-poppins fw-700">4. The Paint Magic Begins</p>
+                            </div>
+                        </div>
+                        <div class="col-12 order-5 col-sm-6 pt-4 col-md-4 col-lg-3">
+                            <div class="box">
+                                <div class="imgbox">
+                                    <img src="./assets/images/perform-inspection.png" alt="perform-inspection" class="w-100 mw-215"/>
+                                </div>
+                                <p class="text-center mw-215 fs-24 fw-700 ff-poppins">6. Perform Inspection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <services-section> -->
+        <section class="position-relative">
+            <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center pt-115">Our Services
+            </h2>
+            <div class="d-flex align-items-center justify-content-center gap-1 pt-3">
+                <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+                <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+                <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+            </div>
+            <img src="./assets/images/yellow-paint.png" alt="yellow-paint" class="position-absolute yellow-paint d-none d-xl-block">
+            <div class="position-relative pt-xl-115 z-1">
+                <div class="rectangle-1 d-none d-xl-block">
+                </div>
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex mb-sm-5 order-2 order-xl-1">
+                            <p class="fs-64 fw-700 ff-poppins text-blue">01 .</p>
+                            <div>
+                                <p class="fs-48 fw-500 ff-poppins text-black m-0 mt-19">Residential Projects</p>
+                                <p class="fs-18 fw-400 ff-poppins mw-471 m-0 pb-24">Lorem Ipsum is simply dummy text of
+                                    the
+                                    printing and
+                                    typesetting industry. Lorem Ipsum has been the
+                                    industry's standard</p>
+                                <button class="button d-inline-block text-white fs-18 fw-400 ff-poppins read-more">Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 order-1 order-xl-2">
+                            <img src="./assets/images/Residential-projects.png" alt="Residential-projects"
+                                class="w-100 transform-translate-xl transform-translate-xxl border-radius23 mt-5 mt-lg-0">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="position-relative mt-xl-250">
+                <img src="./assets/images/pink-paint.png" alt="pink-paint" class="position-absolute pink-paint d-none d-xl-block">
+                <div class="rectangle-1 d-none d-xl-block left-0">
+                </div>
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <img src="./assets/images/restoration-projects.png" alt="restoration-projects"
+                                class="w-100 transform-translate-xl transform-translate-xxl border-radius23 mt-5 mt-lg-0">
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex mb-sm-5 justify-content-lg-end">
+                            <p class="fs-64 fw-700 ff-poppins text-blue">02 .</p>
+                            <div>
+                                <p class="fs-48 fw-500 ff-poppins text-black m-0 mt-19">Residential Projects</p>
+                                <p class="fs-18 fw-400 ff-poppins mw-471 m-0 pb-24">Lorem Ipsum is simply dummy text of
+                                    the
+                                    printing and
+                                    typesetting industry. Lorem Ipsum has been the
+                                    industry's standard</p>
+                                <button class="button d-inline-block text-white fs-18 fw-400 ff-poppins read-more">Read
+                                    More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <section class="mt-xl-250 position-relative">
+            <img src="./assets/images/colorful-paint.png" alt="colorful-paint" class="position-absolute colorful-paint d-none d-xl-block">
+            <div class="position-relative">
+                <div class="rectangle-1 d-none d-xl-block">
+                </div>
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 d-flex mb-sm-5 order-xl-1 order-2 ">
+                            <p class="fs-64 fw-700 ff-poppins text-blue">03 .</p>
+                            <div>
+                                <p class="fs-48 fw-500 ff-poppins text-black m-0 mt-19">Residential Projects</p>
+                                <p class="fs-18 fw-400 ff-poppins mw-471 m-0 pb-24">Lorem Ipsum is simply dummy text of
+                                    the
+                                    printing and
+                                    typesetting industry. Lorem Ipsum has been the
+                                    industry's standard</p>
+                                <button class="button d-inline-block text-white fs-18 fw-400 ff-poppins read-more">Read
+                                    More</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 order-xl-2 order-1">
+                            <img src="./assets/images/commercial-projects.png" alt="commercial-projects"
+                                class="w-100 transform-translate-xl transform-translate-xxl border-radius23 mt-5 mt-lg-0">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- <Inspitations-section> -->
+        <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center pt-115">Inspitations</h2>
+        <div class="d-flex align-items-center justify-content-center gap-1 pt-3 pb-5">
+            <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+            <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+            <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+        </div>
+        <section class="min-vh-100 pb-115 position-relative">
+            <img src="./assets/images/colorful-pain4.png" alt="colorful-pain4" class="position-absolute right-0 top-50">
+            <img src="./assets/images/color.png" alt="color" class="position-absolute bottom-0">
+            <div class="container">
+                <div class="grid_box gap-24">
+                    <div class="grid_item grid-item1 position-relative">
+                        <img src="./assets/images/unsplash.png" alt="unsplash" class="w-100 h-100 position-relative">
+                        <div class="paragraph-rectangle ms-4 mb-3">
+                            <p class="fs-18 fw-400 ff-poppins m-0">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Lorem Ipsum hasu
+                                been the</p>
+                        </div>
+                    </div>
+                    <div class="grid_item grid-item2 position-relative">
+                        <img src="./assets/images/unsplash2.png" alt="unsplash2" class="w-100 h-100">
+                        <div class="paragraph-rectangle2 mx-4 mb-3">
+                            <p class="m-0 fs-18 ff-poppins fw-400">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="grid_item grid-item3 position-relative">
+                        <img src="./assets/images/unsplash3.png" alt="unsplash3" class="w-100 h-100">
+                        <div class="paragraph-rectangle2 mx-4 mb-3">
+                            <p class="m-0 fs-18 ff-poppins fw-400">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid_item grid-item4">
+                        <div class="box bg-blue">
+                            <h2 class="fs-36 fw-700 ff-poppins text-white">Our Promise</h2>
+                            <p class="fs-18 fw-400 ff-poppins text-white opacity-75">“Lorem Ipsum is simply dummy text
+                                of
+                                the printing and typesetting industry. Lorem Ipsum has
+                                been type and scrambled it
+                                to make a type specimen book the industry's standard.”</p>
+                        </div>
+                    </div>
+                    <div class="grid_item grid-item5 position-relative">
+                        <img src="./assets/images/unsplash3.png" alt="unsplash3" class="w-100 h-100">
+                        <div class="paragraph-rectangle2 mx-4 mb-3">
+                            <p class="m-0 fs-18 ff-poppins fw-400">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <our-team> -->
+        <section class="bg-blue d-flex position-relative z-1">
+            <img src="./assets/images/BLUE-SEC.png" alt="BLUE-SEC" class="position-absolute right-0 bottom-0">
+            <div class="container position-relative">
+                <h2 class="text-center text-white fs-48 fw-700 ff-poppins pt-3 pb-3">Our Team</h2>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5 col-xl-4 col-lg-5">
+                        <div class="d-flex justify-content-start-xl justify-content-center text-center">
+                            <div>
+                                <img src="./assets/images/team-leader2.png" alt="team-leader2"
+                                    class="w-100 border-radius23 max-width423">
+                                <p class="fs-18 fw-500 ff-poppins m-0 text-white pt-4">Team Lead</p>
+                                <p class="fs-24 fw-700 ff-poppins m-0 text-white">Frank Woods</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-4 col-lg-5">
+                        <div class="d-flex trlate_x_64_xl justify-content-start-xl justify-content-center text-center">
+                            <div>
+                                <img src="./assets/images/accounts2.png" alt="accounts2"
+                                    class="w-100 border-radius23 max-width423">
+                                <p class="fw-500 ff-poppins fs-18 text-white m-0 pt-4">Accounts</p>
+                                <p class="fs-24 fw-700 ff-poppins text-white m-0">Michale John</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-354-xl justify-content-around tranlateX_17_xl pt-xl-0">
+                    <div class="col-12 col-md-5 col-xl-4 col-lg-5">
+                        <div class="d-flex justify-content-start-xl justify-content-center text-center">
+                            <div>
+                                <img src="./assets/images/manager.png" alt="manager"
+                                    class="w-100 border-radius23 max-width423">
+                                <p class="fs-18 fw-500 ff-poppins text-white m-0 pt-4">Manager</p>
+                                <p class="fs-24 fw-700 ff-poppins text-white m-0 pb-3">John William</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-xl-5 col-lg-5">
+                        <div class="d-flex justify-content-start-xl justify-content-center text-center">
+                            <div>
+                                <img src="./assets/images/CEO.png" alt="CEO" class="w-100 border-radius23 max-width423">
+                                <h2 class="fs-18 fw-500 ff-poppins text-white m-0 pt-4">CEO</h2>
+                                <h6 class="fs-24 ff-poppins fw-700 text-white m-0 pb-3">Thomas Arthur</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <Testimonials-section> -->
+        <section class="position-relative">
+            <img src="./assets/images/many-colors.png" alt="many-colors"
+                class="position-absolute right-0 top-38 d-none d-lg-block">
+            <img src="./assets/images/removebg.png" alt="removebg" class="position-absolute top-2 d-none d-lg-block">
+            <div class="container mt-3 pt-115">
+                <h2 class="fs-48 ff-poppins fw-700 d-flex align-items-center justify-content-center">Testimonials</h2>
+                <div class="d-flex align-items-center justify-content-center gap-1 pt-3 pb-5">
+                    <img src="./assets/images/circle-1.png" alt="circle-1" class="circle">
+                    <img src="./assets/images/circle-2.png" alt="circle-2" class="circle">
+                    <img src="./assets/images/circle-3.png" alt="circle-3" class="circle">
+                </div>
+                <div class="responsive">
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Diane-Moreno.png" alt="Diane-Moreno" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Max-Stoiber.png" alt="Max-Stoiber" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Laurie-Laforest.png" alt="Laurie-Laforest" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Diane-Moreno.png" alt="Diane-Moreno" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Max-Stoiber.png" alt="Max-Stoiber" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="./assets/images/Laurie-Laforest.png" alt="Laurie-Laforest" class="w-100 h-100 mw-251">
+                        <p class="ff-poppins fw-400 fs-18 text-center mw-292 pt-3">Lorem Ipsum is simply dummy text of
+                            the
+                            printing and typesetting industry.</p>
+                        <p class="ff-poppins fs-18 fw-700 mt-2">Diane Moreno</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.responsive').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 556,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+        });
+    </script>
+    <!-- <newsletter-section> -->
+    <section class="position-relative pb-115">
+        <img src="./assets/images/c-paint.png" alt="c-paint"
+            class="position-absolute right-0 bottom-0 d-none d-lg-block">
+        <img src="./assets/images/pink-paint.png" alt="pink-paint"
+            class="position-absolute bottom-23 left-3 d-none d-xl-block">
+        <div class="container">
+            <div class="newsletter-box mt-223">
+                <p class="fs-144 fw-700 linear-gradient ff-poppins transform-translateY m-0">NEWSLETTER</p>
+                <label class="position-relative d-flex justify-content-center gap-3 pb-140">
+                    <input type="text" placeholder="Enter Your E-Mail Here" class="email-box pr-500 fs-24 ff-poppins">
+                    <button class="subscribe-button text-white ff-poppins fw-500 fs-20">Subscribe</button>
+                </label>
+            </div>
+        </div>
+    </section>
+    <!-- <footer> -->
+    <div class="bg-black">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 col-lg-5 mb-lg-0 ">
+                    <div class=" d-flex align-items-center mt-5">
+                        <img src="./assets/images/footer-img.png" alt="footer-img" class="mb-2">
+                    </div>
+                    <div class="text-white ff_poppins fw_400 fs-18 mw-lg-520 mb-3">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of
+                            type and scrambled it</p>
+                    </div>
+                    <div>
+                        <a href="" class="ms-2">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#444444" />
+                                <path
+                                    d="M25.1481 21.4993L25.8225 17.156H21.6072V14.3375C21.6072 13.1495 22.1959 11.9908 24.0839 11.9908H26V8.29325C26 8.29325 24.2614 8 22.5987 8C19.1276 8 16.8587 10.0805 16.8587 13.8463V17.1567H13V21.5H16.8587V32H21.6072V21.5L25.1481 21.4993Z"
+                                    fill="white" />
+                            </svg></a>
+                        <a href="" class="ms-2">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#444444" />
+                                <path
+                                    d="M19.9982 16.4083C18.0107 16.4083 16.4066 18.0124 16.4066 20C16.4066 21.9876 18.0107 23.5917 19.9982 23.5917C21.9858 23.5917 23.5899 21.9876 23.5899 20C23.5899 18.0124 21.9858 16.4083 19.9982 16.4083ZM19.9982 22.3343C18.7129 22.3343 17.6639 21.2854 17.6639 20C17.6639 18.7146 18.7129 17.6657 19.9982 17.6657C21.2836 17.6657 22.3326 18.7146 22.3326 20C22.3326 21.2854 21.2836 22.3343 19.9982 22.3343ZM23.737 15.4242C23.273 15.4242 22.8982 15.7989 22.8982 16.263C22.8982 16.727 23.273 17.1018 23.737 17.1018C24.2011 17.1018 24.5758 16.7288 24.5758 16.263C24.576 16.1528 24.5544 16.0436 24.5123 15.9418C24.4702 15.84 24.4084 15.7475 24.3305 15.6695C24.2525 15.5916 24.16 15.5298 24.0582 15.4877C23.9564 15.4456 23.8472 15.424 23.737 15.4242ZM26.9995 20C26.9995 19.0333 27.0082 18.0754 26.9539 17.1105C26.8997 15.9898 26.644 14.9951 25.8244 14.1756C25.0031 13.3543 24.0102 13.1003 22.8895 13.0461C21.9228 12.9918 20.9649 13.0005 20 13.0005C19.0333 13.0005 18.0754 12.9918 17.1105 13.0461C15.9898 13.1003 14.9951 13.356 14.1756 14.1756C13.3543 14.9969 13.1003 15.9898 13.0461 17.1105C12.9918 18.0772 13.0005 19.0351 13.0005 20C13.0005 20.9649 12.9918 21.9246 13.0461 22.8895C13.1003 24.0102 13.356 25.0049 14.1756 25.8244C14.9969 26.6457 15.9898 26.8997 17.1105 26.9539C18.0772 27.0082 19.0351 26.9995 20 26.9995C20.9667 26.9995 21.9246 27.0082 22.8895 26.9539C24.0102 26.8997 25.0049 26.644 25.8244 25.8244C26.6457 25.0031 26.8997 24.0102 26.9539 22.8895C27.01 21.9246 26.9995 20.9667 26.9995 20ZM25.4584 24.1293C25.3306 24.448 25.1765 24.6862 24.9296 24.9313C24.6827 25.1782 24.4463 25.3324 24.1275 25.4602C23.2064 25.8262 21.0192 25.7439 19.9982 25.7439C18.9773 25.7439 16.7883 25.8262 15.8672 25.4619C15.5485 25.3341 15.3103 25.18 15.0652 24.9331C14.8182 24.6862 14.6641 24.4498 14.5363 24.131C14.1721 23.2082 14.2544 21.0209 14.2544 20C14.2544 18.9791 14.1721 16.7901 14.5363 15.869C14.6641 15.5502 14.8182 15.3121 15.0652 15.0669C15.3121 14.8218 15.5485 14.6659 15.8672 14.5381C16.7883 14.1738 18.9773 14.2561 19.9982 14.2561C21.0192 14.2561 23.2082 14.1738 24.1293 14.5381C24.448 14.6659 24.6862 14.82 24.9313 15.0669C25.1782 15.3138 25.3324 15.5502 25.4602 15.869C25.8244 16.7901 25.7421 18.9791 25.7421 20C25.7421 21.0209 25.8244 23.2082 25.4584 24.1293Z"
+                                    fill="white" />
+                            </svg></a>
+                        <a href="" class="ms-2"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#444444" />
+                                <path
+                                    d="M28 14.663C27.3748 14.9364 26.6945 15.1331 25.9938 15.2098C26.7213 14.7716 27.2661 14.0794 27.526 13.263C26.8433 13.6747 26.0954 13.9634 25.3155 14.1163C24.9895 13.763 24.5952 13.4816 24.1573 13.2896C23.7193 13.0975 23.247 12.9989 22.7699 13C20.8392 13 19.2865 14.5864 19.2865 16.5331C19.2865 16.8065 19.3192 17.0799 19.3723 17.3429C16.4814 17.1897 13.9031 15.7897 12.189 13.6462C11.8767 14.1869 11.713 14.8027 11.7151 15.4293C11.7151 16.6553 12.33 17.7364 13.2678 18.3722C12.7151 18.3501 12.1754 18.1962 11.6926 17.9228V17.9663C11.6926 19.6831 12.8898 21.1059 14.4854 21.4331C14.1858 21.512 13.8776 21.5524 13.5681 21.5533C13.3413 21.5533 13.1268 21.5305 12.9102 21.4994C13.3515 22.8994 14.6366 23.9163 16.1668 23.9494C14.9696 24.9 13.47 25.4592 11.8417 25.4592C11.5496 25.4592 11.2799 25.4488 11 25.4157C12.5445 26.4201 14.3771 27 16.3507 27C22.7576 27 26.2634 21.6195 26.2634 16.9494C26.2634 16.7962 26.2634 16.6429 26.2532 16.4897C26.9315 15.9864 27.526 15.363 28 14.663Z"
+                                    fill="white" />
+                            </svg></a>
+                        <a href="" class="ms-2"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#444444" />
+                                <path
+                                    d="M20.051 14H20.14C20.962 14.0032 25.127 14.0352 26.25 14.3577C26.5895 14.4561 26.8989 14.6479 27.1472 14.914C27.3955 15.18 27.574 15.511 27.665 15.8738C27.766 16.2796 27.837 16.8166 27.885 17.3708L27.895 17.4818L27.917 17.7594L27.925 17.8705C27.99 18.8463 27.998 19.7603 27.999 19.96V20.04C27.998 20.2472 27.989 21.2231 27.917 22.2395L27.909 22.3516L27.9 22.4627C27.85 23.0734 27.776 23.6799 27.665 24.1262C27.5743 24.4891 27.3958 24.8203 27.1475 25.0864C26.8991 25.3525 26.5896 25.5442 26.25 25.6423C25.09 25.9754 20.681 25.9989 20.07 26H19.928C19.619 26 18.341 25.9936 17.001 25.9445L16.831 25.9381L16.744 25.9338L16.573 25.9263L16.402 25.9189C15.292 25.8665 14.235 25.7822 13.748 25.6412C13.4085 25.5432 13.0991 25.3517 12.8507 25.0858C12.6024 24.8199 12.4238 24.4889 12.333 24.1262C12.222 23.6809 12.148 23.0734 12.098 22.4627L12.09 22.3506L12.082 22.2395C12.0326 21.516 12.0053 20.791 12 20.0657L12 19.9343C12.002 19.7048 12.01 18.9115 12.064 18.0359L12.071 17.926L12.074 17.8705L12.082 17.7594L12.104 17.4818L12.114 17.3708C12.162 16.8166 12.233 16.2785 12.334 15.8738C12.4247 15.5109 12.6032 15.1797 12.8515 14.9136C13.0999 14.6475 13.4094 14.4558 13.749 14.3577C14.236 14.2189 15.293 14.1335 16.403 14.0801L16.573 14.0726L16.745 14.0662L16.831 14.063L17.002 14.0555C17.9537 14.0228 18.9058 14.0047 19.858 14.0011H20.051V14ZM18.4 17.4274V22.5716L22.557 20.0005L18.4 17.4274Z"
+                                    fill="white" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="row align-items-center">
+                        <div class="col-6 col-sm-3 mt-5 pt-5">
+                            <ul>
+                                <li class="ff-poppins fw-700 fs-18 text-white mb-3">Home</li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK1</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK2</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK3</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK4</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-5 pt-5">
+                            <ul>
+                                <li class="ff_poppins fw-700 fs-18 text-white mb-3">About us</li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK1</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK2</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK3</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK4</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-5 pt-5">
+                            <ul>
+                                <li class="ff_poppins fw-700 fs-18 text-white mb-3">Contact us</li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK1</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK2</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK3</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK4</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK5</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-sm-3 mt-5 pt-5">
+                            <ul>
+                                <li class="ff_poppins fw-700 fs-18 text-white mb-3 d-flex ">Portfolio</li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK1</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK2</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK3</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK4</a></li>
+                                <li><a class="text-white ff-poppins fw-400 fs_12 mb-2 pb-1 d-inline-block" href="">LINK5</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <hr class="text-white">
+            <div class="row">
+                <div class=" col ff_poppins fs-14 fw_400 text-center pt-5 pb-5 text-white">
+                    <p>© Credits of companyName belong to companyName.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
