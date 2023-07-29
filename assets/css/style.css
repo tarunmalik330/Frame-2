@@ -112,7 +112,7 @@
   transform: scale(1.5);
 }
 .process:hover{
- transform: scale(1.2); 
+ transform: scale(1.1); 
 }
 .icon-hover:hover {
   transform: scale(1.2);
@@ -388,6 +388,11 @@
   padding-left: 12px;
   padding-right: 12px;
 }
+@media (max-width:576px) {
+  .flex-column-sm{
+    flex-direction: column;
+  }
+}
 @media (max-width: 1200px) {
   .small_screen {
     position: fixed !important;
@@ -567,7 +572,7 @@
 }
 @media (max-width: 992px) {
   .pr-500 {
-    padding-right: 200px;
+    padding-right: 143px;
   }
 }
 @media (max-width: 768px) {
